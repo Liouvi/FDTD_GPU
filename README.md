@@ -8,3 +8,9 @@ In order to compile and run:
 ```
 nvcc -o FDTD FDTD2D.cu dataacc.cu curl.cu geometry.cu -rdc=true --expt-relaxed-constexpr && . /FDTD
 ```
+
+To visualize the output run:
+
+```
+python3 visualize.py
+```
