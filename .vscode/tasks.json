@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "CUDA Make",
+            "type": "shell",
+            "command": "nvcc -g -G -o FDTD FDTD2D.cu dataacc.cu curl.cu geometry.cu -rdc=true",
+            "problemMatcher": ["$nvcc"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
